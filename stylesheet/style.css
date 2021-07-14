@@ -125,15 +125,17 @@ a {
 .playerInfo {
   padding: 1px 15px 33px 15px;
 }
-.playerInfo .playerTitle {
+.playerInfo h1 {
   font-size: 28px;
   line-height: 40px;
   font-weight: 700px;
 }
 .playerInfo p {
-  font-size: 16px;
-  font-weight: 400px;
-  line-height: 26px;
+  font-size: 18px;
+    font-weight: 400px;
+    line-height: 26px;
+    color: gray;
+    margin-top: 18px;
 }
 .playerImage {
   width: 300px;
@@ -161,6 +163,9 @@ UpComing Match details
   line-height: 60px;
   font-weight: 700;
 }
+.button1 {
+  cursor: pointer;
+}
 .matchTitle p {
   width: 404px;
   font-size: 16px;
@@ -185,6 +190,7 @@ footer {
   background-color: rgb(255, 255, 255);
   color: white;
   text-align: center;
+  padding-top: 30px;
 }
 .footer {
   width: 484px;
@@ -302,6 +308,7 @@ textarea {
   float: left;
   padding: 4px 27px;
   background-color: chocolate;
+  border:none;
   color: white;
   font-weight: 500;
   font-size: 20px;
@@ -310,7 +317,7 @@ textarea {
 }
 
 main {
-  animation: transitionIn 1s;
+  animation: transitionIn 1.5s;
 }
 @keyframes transitionIn {
   from {
@@ -330,9 +337,16 @@ Media Query for Mobile
   .container {
     width: 100%;
   }
-  nav {
+  .navbar ul{
+    text-align: center;
+  }
+  .navbar ul .empty{
     display: none;
   }
+  .loginButton {
+    display:none;
+  }
+
   header {
     width: 100%;
   }
@@ -377,7 +391,6 @@ Media Query for Mobile
     padding-right: 0;
     margin: 0 auto;
   }
-
   .playerInfo .playerTitle {
     font-size: 25px;
   }
@@ -392,11 +405,116 @@ Media Query for Mobile
     width: 100%;
   }
 
+  /*----------------
+  UpComing Match Css  
+  -------------------*/
+
   .upComingMatch {
-    display: none;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 65px;
   }
-  .contactSection,
-  footer {
-    display: none;
+  .matchTitle {
+    padding-top: 40px;
   }
+  .matchTitle h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .matchTitle p {
+    width: 320px;
+  }
+  .matchDetails {
+    width: 330px;
+    margin: auto;
+  }
+  .matchImage {
+    width: 320px;
+    margin: auto;
+  }
+  .button1{
+    width: 150px;
+    margin-bottom: 45px;
+  }
+
+
+  /*----------------
+  contact Section  
+  -----------------*/
+
+  .contactSection {
+    margin: auto;
+    text-align: center;
+    padding: 40px 50px;
+  }
+  .colorDesign {
+    color: chocolate;
+  }
+  
+  .contactHeader {
+    width: 320px;
+  }
+  .contactHeader p {
+    line-height: 22px;
+  }
+  .contactContent {
+    text-align: center;
+    flex-direction: column;    
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  .contactIcon h3 {
+    font-size: 25px;
+  }
+  .contactIcon a {
+    color: rgb(5, 5, 5);
+  }
+  
+  /* .fontAwesome {
+    font-size: 50px;
+    color: chocolate;
+    margin-bottom: 20px;
+  } */
+  
+  /*----------------------- 
+  Form Section  
+  --------------------------*/
+  .submitform {
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 50px);
+  }
+  
+  .item1 {
+    grid-column: 1/1;
+  }
+  .contactForm button {
+    width: 130px;
+    padding: 4px 25px;
+    background-color: rgba(30, 114, 210, 0.514);
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+
+  /*---------------- 
+  Footer Section  
+  -------------------*/
+ 
+  .footer {
+    width: 330px;
+  }
+  footer img {
+    width: 320px;
+    margin: auto;
+  }
+  
+
+  /* .upComingMatch {
+    display: none;
+  } */
+  /* .contactSection {
+    display: none;
+  } */
 }
