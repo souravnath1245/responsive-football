@@ -4,35 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Css StyleSheet  -->
+    <link rel="stylesheet" href="stylesheet/style.css" />
+    <!-- Css StyleSheet For Tablet Devise  -->
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 960px)"
+      href="stylesheet/tablet.css"
+    />
+    <!-- Css StyleSheet For Mobile Devise  -->
+    <link rel="stylesheet" href="stylesheet/mobile.css" />
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/399cc4c602.js"
       crossorigin="anonymous"
     ></script>
-
-    <!-- Css StyleSheet  -->
-    <link rel="stylesheet" href="stylesheet/style.css" />
-
     <title>Responsive Football</title>
   </head>
   <body>
+    <!--------------------- 
+      Start Header Tag  
+    ------------------------>
     <header>
       <div class="container">
+        <!-------------- Navigation start  ------------------->
         <nav>
           <div class="navbar">
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#players">players</a></li>
-              <li class='empty'><a href="#worldCup"> World Cup 2023</a></li>
+              <li class="empty"><a href="#worldCup"> World Cup 2023</a></li>
               <li><a href="#matches">Upcoming Matches</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
           <div class="loginButton">
-            <i class="fas fa-arrow-right"></i>
+            <i class="fas fa-sign-in-alt"></i>
             <a class="buttonLink" href="#">Login </a>
           </div>
         </nav>
+        <!-------------- Navigation End  ------------------->
+        <!-------------- Banner start  ------------------->
         <div class="banner">
           <div class="header">
             <h1>
@@ -48,14 +61,21 @@
             <img src="images/banner.png" alt="It is a banner" />
           </div>
         </div>
+        <!-------------- Banner End  ------------------->
       </div>
     </header>
+    <!----------------------
+       End Header Tag  
+  ----------------------------->
 
-    <!-- Players Details Section  -->
+    <!---------------------------------
+       Start Main Tag 
+    -------------------------------->
     <main>
+      <!---------------- Players Section Start-------------------->
       <section id="players" class="container">
+        <!---------------Players Ariticle Start------------------>
         <article class="playersBio">
-          <!-- .playerDetail*11>.playerImage+.playerInfo>h1{Naymar jr}+p{lorem15}>.playerImage>img[src='images/players/player-12.png'] -->
           <div class="playerDetail">
             <div class="playerImage">
               <img src="images/players/player-1.png" alt="" />
@@ -217,7 +237,10 @@
             </div>
           </div>
         </article>
+        <!---------------Players Ariticle End------------------>
       </section>
+      <!---------------- Players Section End-------------------->
+      <!--------------- Players Match Section Start----------->
       <section id="matches" class="container">
         <div class="upComingMatch">
           <div class="matchDetails">
@@ -239,6 +262,8 @@
           </div>
         </div>
       </section>
+      <!--------------- Players Match Section End----------->
+      <!--------------- Contact Section Start ----------->
       <section id="contact" class="container">
         <div class="contactSection">
           <div class="contactHeader">
@@ -253,20 +278,24 @@
           </div>
           <div class="contactContent">
             <div class="contactIcon">
+              <i class="fas fa-mobile-alt"></i>
               <h3>Call Us On</h3>
               <a href="tel:+01747332262">+ 01747 332 262</a>
             </div>
             <div class="contactIcon">
+              <i class="far fa-envelope"></i>
               <h3>Email Us At</h3>
               <a href="http://souravnath1245@gmail.com"
                 >Sourav.Nath@gmail.com</a
               >
             </div>
             <div class="contactIcon">
+              <i class="fab fa-phoenix-framework"></i>
               <h3>Visit Office</h3>
               <a href="/">202, SSK road, Feni</a>
             </div>
           </div>
+          <!----------------Start Form section Start---------------->
           <div class="contactForm">
             <form class="submitform">
               <input
@@ -299,9 +328,37 @@
               <button type="submit">Submit</button>
             </form>
           </div>
+          <!----------------Start Form section End---------------->
+        </div>
+      </section>
+      <!--------------- Contact Section End ----------->
+      <section id="messengerGroup" class="container">
+        <div class="messenger">
+          <h1>My <span class="colorDesign">Messenger</span> App</h1>
+          <div class="contentTitle">
+            <h2><span class="colorDesign">Sourav Kumar Nath</span></h2>
+            <p>
+              <span class="colorDesign">I am a </span>Web Designer.
+              <span class="colorDesign"
+                >I am available for work. If you are happy to see my design so
+                you can message me in the link below.</span
+              >
+            </p>
+            <span class="colorDesign"><i class="fas fa-arrow-down"></i></span>
+            <a href="https://facebook-messenger-clone-e43aa.web.app"
+              >Messenger</a
+            >
+          </div>
         </div>
       </section>
     </main>
+    <!---------------------------------------
+       End Main tag 
+    --------------------------------------->
+
+    <!-----------------------
+       Start Footer Tag 
+      ---------------------->
     <footer>
       <div class="footer">
         <img src="images/Logo.png" alt="Football Logo" />
@@ -322,5 +379,8 @@
         </div>
       </div>
     </footer>
+    <!----------------------- 
+      End Footer Tag 
+  ------------------------------>
   </body>
 </html>

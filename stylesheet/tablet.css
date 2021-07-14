@@ -1,0 +1,53 @@
+@media only screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+  }
+  .navbar ul {
+    padding: 20px;
+  }
+  nav {
+    margin-bottom: 10px;
+  }
+  .banner {
+    flex-direction: column;
+    padding-bottom: 60px;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    box-sizing: border-box;
+  }
+  .header {
+    padding: 0px;
+    width: 720px;
+    padding-bottom: 70px;
+  }
+  .image {
+    width: 420px;
+  }
+
+  /* Players Section  */
+  .playersBio {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .playerDetail {
+    width: 380px;
+    margin: 0 auto;
+  }
+  .playerImage {
+    width: 350px;
+  }
+  .playerInfo .playerTitle {
+    font-size: 30px;
+  }
+  .playerInfo p {
+    line-height: 25px;
+    text-align: justify;
+  }
+
+  .upComingMatch {
+    padding: 50px 30px;
+  }
+}

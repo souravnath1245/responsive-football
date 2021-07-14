@@ -1,0 +1,205 @@
+
+/*-------------------- 
+Media Query for Mobile
+----------------------*/
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .navbar ul {
+    text-align: center;
+  }
+  .navbar ul .empty {
+    display: none;
+  }
+  .loginButton {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+  }
+  .header {
+    padding-bottom: 30px;
+  }
+  .banner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+  }
+  .header {
+    padding: 0;
+    width: 320px;
+  }
+  .button a {
+    font-size: 12px;
+  }
+  .button {
+    width: 100px;
+    padding: 3px 16px;
+  }
+  .image {
+    width: 320px;
+  }
+  .header h1 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  /* Players Section  */
+  .playersBio {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .playerDetail {
+    width: 330px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+  }
+  .playerInfo .playerTitle {
+    font-size: 25px;
+  }
+  .playerInfo p {
+    line-height: 20px;
+  }
+  .playerImage {
+    width: 300px;
+    padding: 15px;
+  }
+  .playerImage img {
+    width: 100%;
+  }
+
+  /*----------------
+    UpComing Match Css  
+    -------------------*/
+
+  .upComingMatch {
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 65px;
+  }
+  .matchTitle {
+    padding-top: 40px;
+  }
+  .matchTitle h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .matchTitle p {
+    width: 320px;
+  }
+  .matchDetails {
+    width: 330px;
+    margin: auto;
+  }
+  .matchImage {
+    width: 320px;
+    margin: auto;
+  }
+  .button1 {
+    width: 150px;
+    margin-bottom: 45px;
+  }
+
+  /*----------------
+    contact Section  
+    -----------------*/
+
+  .contactSection {
+    margin: auto;
+    text-align: center;
+    padding: 40px 50px;
+  }
+  .colorDesign {
+    color: chocolate;
+  }
+
+  .contactHeader {
+    width: 320px;
+  }
+  .contactHeader p {
+    line-height: 22px;
+  }
+  .contactContent {
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  .contactIcon h3 {
+    font-size: 25px;
+  }
+  .contactIcon a {
+    color: rgb(5, 5, 5);
+  }
+
+  /* Messanger App  */
+  .messenger{
+    padding: 10px;
+    background-color: black;
+  }
+  .messenger h1,h2,p{
+    padding-bottom: 16px;
+  }
+  .messenger h1{
+    font-size: 26px;
+  }
+  .contentTitle h2{
+    font-size:22px;
+  }
+  .messenger p{
+  width: 320px;
+  }
+  .messenger:hover {
+    transition: color 1s ease-in ;
+    color:white;
+    
+  }
+
+  /* .fontAwesome {
+      font-size: 50px;
+      color: chocolate;
+      margin-bottom: 20px;
+    } */
+
+  /*----------------------- 
+    Form Section  
+    --------------------------*/
+  .submitform {
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 50px);
+  }
+
+  .item1 {
+    grid-column: 1/1;
+  }
+  .contactForm button {
+    width: 130px;
+    padding: 4px 25px;
+    background-color: rgba(30, 114, 210, 0.514);
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+
+  /*---------------- 
+    Footer Section  
+    -------------------*/
+
+  .footer {
+    width: 330px;
+  }
+  footer img {
+    width: 320px;
+    margin: auto;
+  }
+}
